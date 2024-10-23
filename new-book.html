@@ -61,39 +61,39 @@
     <main>
         <div class="container py-5">
 
-            <h1 class="pb-3">Nuovo Libro</h1>
+            <h1 class="pb-5">Nuovo Libro</h1>
 
             <div class="form">
-                <div class="row row-gap-3">
+                <div class="row row-gap-3 row-gap-lg-4">
                     <div class="col-6">
-                        <label for="first" class="form-label">Nome Autore</label>
+                        <label for="first" class="form-label"><h5>Nome Autore</h5></label>
                         <input type="text" id="first" name="first" class="form-control" placeholder="Inserisci il nome dell'autore">
                     </div>
                     <div class="col-6">
-                        <label for="last" class="form-label">Cognome Autore</label>
+                        <label for="last" class="form-label"><h5>Cognome Autore</h5> </label>
                         <input type="text" id="last" name="last" class="form-control" placeholder="Inserisci il congnome dell'autore">
                     </div>
     
                     <div class="col-12">
-                        <label for="title" class="form-label">Titolo</label>
+                        <label for="title" class="form-label"><h5>Titolo</h5></label>
                         <input type="text" id="title" name="title" class="form-control" placeholder="Inserisci il titolo del libro">
                         <div id="titlelHelp" class="form-text">Titolo versione italiana</div>
                     </div>
                     <div class="col-12 col-lg-4">
-                        <label for="gender" class="form-label">Genere</label>
+                        <label for="gender" class="form-label"><h5>Genere</h5></label>
                         <select class="form-select" aria-label="Scegli il Genere" id="gender" name="gender">
-                            <option selected>Scegli il Genere</option>
+                            <option selected><strong>Scegli il Genere</strong></option>
                             <option value="m">Uomo</option>
                             <option value="f">Donna</option>
                             <option value="nc">Preferisco non specificare</option>
                         </select>
                     </div>
                     <div class="col-12 col-lg-4">
-                        <label for="year" class="form-label">Anno di pubblicazione</label>
+                        <label for="year" class="form-label"><h5>Anno di pubblicazione</h5></label>
                         <input type="text" id="year" name="year" class="form-control" placeholder="Inserisci l'anno">
                     </div>
                     <div class="col-12 col-lg-4">
-                        <label for="isbn" class="form-label">ISBN#</label>
+                        <label for="isbn" class="form-label"><h5>ISBN#</h5></label>
                         <input type="text" id="isbn" name="isbn" class="form-control" placeholder="Inserisci il codice ISBN#">
                     </div>
 
@@ -101,17 +101,19 @@
                     <div class="col-12 my-2"> <hr> </div>
 
                     <div class="col-12">
-                        <label for="title" class="form-label">Note</label>
-                        <textarea type="text-area" id="title" name="title" class="form-control" placeholder="Inserisci il titolo del libro"> </textarea>
+                        <label for="note" class="form-label"><h5>Note</h5></label>
+                        <textarea type="text-area" id="note" name="note" class="form-control" placeholder="Inserisci il titolo del libro"></textarea>
                     </div>
 
                     <div class="col-12">
-                        <ul class="list-group">
-                            <li class="list-group-item">
+                            <div class="list-group-item">
                               <input class="form-check-input me-1" type="checkbox" value="true" id="digital">
                               <label class="form-check-label" for="digital">Disponibile anche in digitale</label>
-                            </li>
-                        </ul>
+                            </div>
+
+                    </div>
+                    <div class="col-12">
+                        <button class="submit w-auto btn btn-primary">Aggiungi Libro</button>
                     </div>
                 </div>
             </div>
