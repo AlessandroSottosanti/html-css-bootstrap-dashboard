@@ -59,6 +59,63 @@
     </header>
 
     <main>
+        <div class="container py-5">
+
+            <h1 class="pb-3">Nuovo Libro</h1>
+
+            <div class="form">
+                <div class="row row-gap-3">
+                    <div class="col-6">
+                        <label for="first" class="form-label">Nome Autore</label>
+                        <input type="text" id="first" name="first" class="form-control" placeholder="Inserisci il nome dell'autore">
+                    </div>
+                    <div class="col-6">
+                        <label for="last" class="form-label">Cognome Autore</label>
+                        <input type="text" id="last" name="last" class="form-control" placeholder="Inserisci il congnome dell'autore">
+                    </div>
+    
+                    <div class="col-12">
+                        <label for="title" class="form-label">Titolo</label>
+                        <input type="text" id="title" name="title" class="form-control" placeholder="Inserisci il titolo del libro">
+                        <div id="titlelHelp" class="form-text">Titolo versione italiana</div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <select class="form-select" aria-label="Scegli il Genere">
+                            <option selected>Scegli il Genere</option>
+                            <option value="m">Uomo</option>
+                            <option value="f">Donna</option>
+                            <option value="nc">Preferisco non specificare</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <label for="year" class="form-label">Anno di pubblicazione</label>
+                        <input type="text" id="year" name="year" class="form-control" placeholder="Inserisci l'anno">
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <label for="isbn" class="form-label">ISBN#</label>
+                        <input type="text" id="isbn" name="isbn" class="form-control" placeholder="Inserisci il codice ISBN#">
+                    </div>
+
+
+                    <div class="col-12 my-2"> <hr> </div>
+
+                    <div class="col-12">
+                        <label for="title" class="form-label">Note</label>
+                        <textarea type="text-area" id="title" name="title" class="form-control" placeholder="Inserisci il titolo del libro"> </textarea>
+                    </div>
+
+                    <div class="col-12">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="true" id="digital">
+                              <label class="form-check-label" for="digital">Disponibile anche in digitale</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
 
     </main>
 
